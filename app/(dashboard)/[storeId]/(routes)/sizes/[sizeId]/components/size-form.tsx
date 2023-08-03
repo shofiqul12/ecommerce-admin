@@ -52,8 +52,7 @@ export const SizeForm: React.FC<SizeFormProps> = ({
   const form = useForm<SizeFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: initialData || {
-      name: '',
-      value: ''
+      name: ''
     }
   });
 
